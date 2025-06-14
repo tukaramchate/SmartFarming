@@ -1,0 +1,97 @@
+/* DiseasePredictionTable.css */
+
+/* Container for the table */
+.disease-prediction-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 180px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f968;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 11px -20px 55px, rgba(0, 0, 0, 0.12) 13px -16px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ 
+  }
+  
+  /* Table styling */
+  .disease-prediction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Table header */
+  .disease-prediction-table thead {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .disease-prediction-table th {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  /* Table body */
+  .disease-prediction-table tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .disease-prediction-table tbody tr:nth-child(even) {
+    background-color: #f2f2f257;
+  }
+  
+  .disease-prediction-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .disease-prediction-table td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+ /* Responsive table for mobile and tablets */
+@media (max-width: 768px) {
+  .disease-prediction-container {
+    padding: 10px;
+  }
+
+  .disease-prediction-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .disease-prediction-table thead {
+    display: none; /* Hide the table head */
+  }
+
+  .disease-prediction-table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+
+  .disease-prediction-table td {
+    display: block;
+    text-align: right;
+    padding: 8px 10px;
+    font-size: 14px;
+    position: relative;
+  }
+
+  .disease-prediction-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+  }
+}

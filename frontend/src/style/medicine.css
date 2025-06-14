@@ -1,0 +1,62 @@
+.medicine {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .medicine h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .medicine p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .medicine-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .medicine-card {
+    background: #ffffff8a;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    border: 3px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .medicine-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .medicine-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .leaf-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .leaf-tag {
+    background-color: #e0f7fa;
+    color: #00796b;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .medicine-card p {
+    font-size: 1rem;
+    color: #333;
+  }

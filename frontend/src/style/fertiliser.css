@@ -1,0 +1,57 @@
+.fertiliser {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .fertiliser h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .fertiliser p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .fertiliser-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .fertiliser-card {
+    background: #ffffff8a;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+     border: 3px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .fertiliser-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .fertiliser-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .nutrient-tag {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .fertiliser-card p {
+    font-size: 1rem;
+    color: #333;
+  }

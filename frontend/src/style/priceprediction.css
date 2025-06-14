@@ -1,0 +1,77 @@
+/* Container for all plant cards */
+.graph-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual plant card */
+.graph-card {
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 11px -20px 55px, rgba(0, 0, 0, 0.12) 13px -16px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ 
+  overflow: hidden;
+  width: 70%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  /* max-width: 1000px; */
+  height: auto;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect */
+.graph-card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, 
+              rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* Image inside the card */
+.graph-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 5px;
+}
+/* Fullscreen overlay */
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.fullscreen-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .graph-card {
+    width: 90vw;        /* 90% of the viewport width */
+    height: auto;       /* Let height adjust automatically */
+    margin-top: 60px;
+  }
+
+  .graph-image {
+    width: 100%;        /* Full width inside the card */
+    height: auto;       /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image scales inside without cropping */
+  }
+}

@@ -1,0 +1,77 @@
+/* Main container */
+.plant-container {
+  width: 100%;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 290px;
+  box-sizing: border-box;
+}
+
+/* Inner wrap */
+.plant-inner-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Plant card */
+.plant-card {
+  background-color: #f0f8ff1f;
+  border-radius: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 365px;
+  height: 580px;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.plant-card:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* Image styling */
+.plant-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+  .plant-card {
+    height: 450px;
+  }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .plant-inner-wrap {
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .plant-card {
+    height: 560px;        /* Adjust height to fit mobile screens */
+    max-width: 100%;
+    border-radius: 25px;
+
+  }
+
+  .plant-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* Ensures full coverage of card */
+    border-radius: 10px;
+  }
+}
